@@ -1,0 +1,615 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>กลุ่มงานประกันสุขภาพโรงพยาบาลพุทธชินราช</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="img/images.png">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="css/nice-select.css">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="css/icofont.css">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="css/slicknav.min.css">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="css/owl-carousel.css">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="css/datepicker.css">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		
+				<!-- POPUP ส่วนนี้แสดงเมื่อโหลดหน้า -->
+		<div class="popup-overlay" id="imagePopup">
+			<div class="popup-content">
+			<button class="close-btn" onclick="closePopup()">×</button>
+			<img src="img/objplan.jpg" alt="Welcome Image">
+			</div>
+		</div>
+		
+		
+		<script>
+			function closePopup() {
+			document.getElementById("imagePopup").style.display = "none";
+			}
+		
+			// ถ้าต้องการให้ popup แสดงหลัง delay 2 วิ
+			// setTimeout(() => {
+			//   document.getElementById("imagePopup").style.display = "flex";
+			// }, 2000);
+		</script>
+		
+		
+	
+		<!-- Header Area -->
+		<header class="header" >
+
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="index.html"><img src="img/logo.KTG5SLr0.png" alt="#"></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="col-lg-8 col-md-9 col-12">
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li class="active"><a href="index.html">หน้าแรก </a></li>
+											<li class=""><a href="#">เกี่ยวกับเรา<i class="icofont-rounded-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="personal.html" target="">บุคลากร</a></li>
+													
+												</ul>
+											</li>
+											<li><a href="#"> Claim Center<i class="icofont-rounded-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="https://fdh.moph.go.th/hospital/" target="_blank">Financial Data Hub</a></li>
+													<li><a href="https://eclaim.nhso.go.th/Client/login?url=%2Fhosp%2Fop%2Fops" target="">E-Claim</a></li>
+													<li><a href="https://www.healthplatform.krungthai.com/healthPlatform/login" target="">Krungthai Digital Health Platform</a></li>
+													<li><a href="https://audit.nhso.go.th/osrappeal/frontend/#/auth/login-datacenter" target="">OSR</a></li>
+													<li><a href="https://claim-nhso.moph.go.th/nhso/" target="_blank">Moph Claim</a></li>
+													<li><a href="https://iam.nhso.go.th/realms/nhso/protocol/openid-connect/auth?response_type=code&client_id=authencode&scope=openid%20profile&state=0lFYXnby5yPRdWFlUVN_ozMWBeKfDroR3zO6VDxLhjM%3D&redirect_uri=http://authenservice.nhso.go.th/authencode/login/oauth2/code/authencode&nonce=bkLXZeq4zQzVOeMY4DR85N5pjcmlIRBzQuGwlRlKR2s" target="_blank">New Authen Code</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Document <i class="icofont-rounded-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="http://nextcloud.budhospdomain.local/index.php/s/mmzEwQorMnpjomq" target="_blank">หนังสือภายใน</a></li>
+													<li><a href="http://nextcloud.budhospdomain.local/index.php/login?clear=1" target="_blank">Upload Document</a></li>
+												</ul>
+											</li>
+											<li><a href="#">ติดต่อเรา<i class="icofont-rounded-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="#">Tel: 055-248-466</a></li>
+												</ul>
+											</li>
+											<li><a href="#">ERP Copilot<i class="icofont-rounded-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="https://herpcopilot.com" target="_blank">Copilot Website</a></li>
+													<li><a href="https://herpcopilot.com/docfile/" target="_blank">Program Copilot</a></li>
+												</ul>
+											</li>
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+		
+		<!-- Slider Area -->
+		<section class="slider">
+			<div class="hero-slider">
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/T1.jpg')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h2> <span> </span> <br></br><span></span></h2>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Slider -->
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/T23.jpg')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h2> <span> </span> <br></br><span></span></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Start End Slider -->
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/T2.jpg')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h2> <span> </span> <br> </br><span></span></h2>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Slider -->
+			</div>
+		</section>
+		<!--/ End Slider Area -->
+		
+		<!-- Start Feautes -->
+		<section class="Feautes section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h3></h3>	
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features">
+							<div class="signle-icon">
+								<a href="https://www.nhso.go.th/th/"><img class="sppb-img-responsive " src="img/UC.png" alt="Image" title="" width="270" height="250"></a>
+							</div>
+							<h3>สิทธิหลักประกันสุขภาพแห่งชาติ</h3>
+							<p></p>
+						</div>
+						<!-- End Single features -->
+					</div>
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features">
+							<div class="signle-icon">
+								<a href="https://www.chi.or.th/"><img class="sppb-img-responsive " src="img/OFC.png" alt="Image" title="" width="280" height="250"></a>
+							</div>
+							<h3>สิทธิสวัสดิการข้าราชการ</h3>
+							<p></p>
+						</div>
+						<!-- End Single features -->
+					</div>
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features last">
+							<div class="signle-icon">
+								<a href="https://www.sso.go.th/wpr/"><img class="sppb-img-responsive " src="img/SSS.png" alt="Image" title="" width="257" height="250"></a>
+							</div>
+							<h3>สิทธิประกันสังคม</h3>
+							<p></p>
+						</div>
+						<!-- End Single features -->
+					</div> 
+				</div>
+			</div>
+		</section>
+
+
+
+		<!-- Start Why choose -->
+		<section class="why-choose section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h3>เราจะดูแลประชาชนให้เข้าถึงสิทธิการรักษาทุกกองทุน </h3>
+							<img src="img/section-img.png" alt="#">
+							<p>บริหารจัดการการเบิกจ่าย ค่าบริการทางการแพทย์ ทุกกองทุนให้ครบถ้วน ถูกต้องและทันเวลา </p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<!-- Start Choose Left -->
+						<div class="choose-left">
+							<h3>กลุ่มงานประกันสุขภาพโรงพยาบาลพุทธชินราช</h3>
+							<p>งานประกันสุขภาพของโรงพยาบาลพุทธชินราชมีหน้าที่ดูแลเรื่องการบริหารจัดการสิทธิประกันสุขภาพของผู้ป่วย รวมถึงการบันทึกข้อมูล การตรวจความถูกต้องของข้อมูลเวชระเบียน 
+								และการบริหารจัดการเงินชดเชยค่ารักษาตามสิทธิต่างๆ นอกจากนี้ ยังมีกิจกรรมส่งเสริมสุขภาพ เช่น การฉีดวัคซีนไข้หวัดใหญ่ฟรีสำหรับผู้ประกันตนบางกลุ่ม. </p>
+							<p>กิจกรรมส่งเสริมสุขภาพ:
+								วัคซีนไข้หวัดใหญ่ฟรี: โรงพยาบาลพุทธชินราชจัดกิจกรรมฉีดวัคซีนไข้หวัดใหญ่ฟรีสำหรับผู้ประกันตนสิทธิประกันสังคม (ม.33 และ ม.39) ที่อายุ 50 ปีขึ้นไป. 
+								ระยะเวลาการบริการ: วันจันทร์-ศุกร์ เวลา 13.00-15.00 น. (เว้นเสาร์-อาทิตย์และวันหยุดนักขัตฤกษ์). 
+								สถานที่: ศูนย์ตรวจสุขภาพ (Wellness Center) อาคารเฉลิมพระเกียรติฯ (อุบัติเหตุ) ชั้น 3 </p>
+							<div class="row">
+								<div class="col-lg-6">
+									<ul class="list">
+										<li><i class="fa fa-caret-right"></i>การบันทึกข้อมูล </li>
+										<li><i class="fa fa-caret-right"></i>การตรวจสอบความสมบูรณ์ </li>
+									</ul>
+								</div>
+								<div class="col-lg-6">
+									<ul class="list">
+										<li><i class="fa fa-caret-right"></i>การบริหารเงินชดเชย  </li>
+										<li><i class="fa fa-caret-right"></i>การจัดส่งแฟ้มเวชระเบียน </li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- End Choose Left -->
+					</div>
+					<div class="col-lg-6 col-12">
+						<!-- Start Choose Rights -->
+						<div class="choose-right">
+							<div class="video-image">
+								<!-- Video Animation -->
+								<div class="promo-video">
+									<div class="waves-block">
+										<div class="waves wave-1"></div>
+										<div class="waves wave-2"></div>
+										<div class="waves wave-3"></div>
+									</div>
+								</div>
+								<!--/ End Video Animation -->
+								<a href="https://www.youtube.com/watch?v=iW8fnD8UXsk" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+							</div>
+						</div>
+						<!-- End Choose Rights -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Why choose -->
+
+		
+
+		<!-- Start ปฏิทินการทำงาน -->
+		<section class="why-choose section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<!--<img src="img/section-img.png" alt="#"> -->
+							<!DOCTYPE html>
+							<html lang="en">
+							<head>
+							  <meta charset="UTF-8">
+							  <title>Monthly Calendar</title>
+							  <style>
+								
+							  </style>
+							</head>
+							<body>
+							
+							<div class="calendar-container">
+							  <h1 id="title">Monthly Calendar</h1>
+							  <div class="calendar-header">
+								<button onclick="changeMonth(-1)">◀</button>
+								<h2 id="monthYear"></h2>
+								<button onclick="changeMonth(1)">▶</button>
+								<select id="lang" onchange="changeLanguage()">
+								  <option value="en">English</option>
+								  <option value="th">ไทย</option>
+								</select>
+							  </div>
+							  <div class="calendar-grid" id="calendar-days"></div>
+							</div>
+							
+							<div class="overlay" id="overlay" onclick="closeModal()"></div>
+							<div class="modal" id="modal">
+							  <h3 id="modal-date">Event Date</h3>
+							  <input type="text" id="eventText" placeholder="Enter event name">
+							  <div class="row">
+								<input type="time" id="startTime">
+								<input type="time" id="endTime">
+							  </div>
+							  <button onclick="saveEvent()">Save</button>
+							  <button onclick="deleteEvent()">Delete</button>
+							  <button onclick="closeModal()">Cancel</button>
+							</div>
+							
+							<script>
+							  const monthNames = {
+								en: ["January", "February", "March", "April", "May", "June",
+									 "July", "August", "September", "October", "November", "December"],
+								th: ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน",
+									 "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"]
+							  };
+							
+							  const dayNames = {
+								en: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+								th: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"]
+							  };
+							
+							  const labels = {
+								en: {
+								  title: "Agenda",
+								  event: "Event Date",
+								  placeholder: "Enter event name",
+								  save: "Save", del: "Delete", cancel: "Cancel"
+								},
+								th: {
+								  title: "ตารางกำหนดการประชุมรายเดือน",
+								  event: "กิจกรรมวันที่",
+								  placeholder: "รายละเอียดกิจกรรม",
+								  save: "บันทึก", del: "ลบ", cancel: "ยกเลิก"
+								}
+							  };
+							
+							  let lang = "en";
+							  let currentDate = new Date();
+							  let events = JSON.parse(localStorage.getItem("calendarEvents") || "{}");
+							  let selectedDate = null;
+							
+							  const calendarDays = document.getElementById("calendar-days");
+							  const monthYear = document.getElementById("monthYear");
+							  const overlay = document.getElementById("overlay");
+							  const modal = document.getElementById("modal");
+							  const modalDate = document.getElementById("modal-date");
+							  const eventText = document.getElementById("eventText");
+							  const startTime = document.getElementById("startTime");
+							  const endTime = document.getElementById("endTime");
+							
+							  function renderCalendar() {
+								const year = currentDate.getFullYear();
+								const month = currentDate.getMonth();
+								const firstDay = new Date(year, month, 1).getDay();
+								const daysInMonth = new Date(year, month + 1, 0).getDate();
+							
+								calendarDays.innerHTML = "";
+							
+								dayNames[lang].forEach(day => {
+								  const el = document.createElement("div");
+								  el.className = "day-name";
+								  el.innerText = day;
+								  calendarDays.appendChild(el);
+								});
+							
+								for (let i = 0; i < firstDay; i++) {
+								  calendarDays.innerHTML += `<div class="day"></div>`;
+								}
+							
+								for (let d = 1; d <= daysInMonth; d++) {
+								const dateKey = `${year}-${String(month + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+								const cell = document.createElement("div");
+								cell.className = "day";
+								cell.innerHTML = `<strong>${d}</strong>`;
+								cell.onclick = () => openModal(dateKey);
+
+								if (events[dateKey]) {
+									const eventInfo = events[dateKey];
+									const eventTextEl = document.createElement("div");
+									eventTextEl.style.fontSize = "0.9em";
+									eventTextEl.style.marginTop = "6px";
+									eventTextEl.style.color = "#333";
+									eventTextEl.style.wordBreak = "break-word";
+									eventTextEl.innerText = `${eventInfo.start || ""} ${eventInfo.text}`;
+									cell.appendChild(eventTextEl);
+								}
+
+								calendarDays.appendChild(cell);
+								}
+								monthYear.innerText = `${monthNames[lang][month]} ${year}`;
+								document.getElementById("title").innerText = labels[lang].title;
+							  }
+							
+							  function changeMonth(offset) {
+								currentDate.setMonth(currentDate.getMonth() + offset);
+								renderCalendar();
+							  }
+							
+							  function openModal(date) {
+								selectedDate = date;
+								modalDate.innerText = `${labels[lang].event} ${date}`;
+								const event = events[date] || {};
+								eventText.value = event.text || "";
+								startTime.value = event.start || "";
+								endTime.value = event.end || "";
+								eventText.placeholder = labels[lang].placeholder;
+								modal.style.display = "block";
+								overlay.style.display = "block";
+							  }
+							
+							  function closeModal() {
+								modal.style.display = "none";
+								overlay.style.display = "none";
+							  }
+							
+							  function saveEvent() {
+								if (!eventText.value.trim()) return;
+								events[selectedDate] = {
+								  text: eventText.value,
+								  start: startTime.value,
+								  end: endTime.value
+								};
+								localStorage.setItem("calendarEvents", JSON.stringify(events));
+								closeModal();
+								renderCalendar();
+							  }
+							
+							  function deleteEvent() {
+								const deletePassword = "10676"; // แก้รหัสผ่านตรงนี้ได้
+								const pass = prompt(lang === "th" ? "กรุณาใส่รหัสผ่านเพื่อลบกิจกรรม" : "Enter password to delete this event:");
+								if (pass !== deletePassword) {
+									alert(lang === "th" ? "รหัสผ่านไม่ถูกต้อง" : "Incorrect password!");
+									return;
+								}
+								delete events[selectedDate];
+								localStorage.setItem("calendarEvents", JSON.stringify(events));
+								closeModal();
+								renderCalendar();
+
+
+							  }
+							
+							  function changeLanguage() {
+								lang = document.getElementById("lang").value;
+								document.querySelector('button[onclick="saveEvent()"]').innerText = labels[lang].save;
+								document.querySelector('button[onclick="deleteEvent()"]').innerText = labels[lang].del;
+								document.querySelector('button[onclick="closeModal()"]').innerText = labels[lang].cancel;
+								renderCalendar();
+							  }
+							
+							  renderCalendar();
+							</script>
+							
+							</body>
+							</html>
+
+							<p></p>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+
+
+			
+
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>About Us</h2>
+								<p>Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore dolore magna.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						
+						
+						
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Copyright 2025  | W8RAM </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+		
+		
+
+		
+		
+		
+		
+	
+		<!-- jquery Min JS -->
+        <script src="js/jquery.min.js"></script>
+		<!-- jquery Migrate JS -->
+		<script src="js/jquery-migrate-3.0.0.js"></script>
+		<!-- jquery Ui JS -->
+		<script src="js/jquery-ui.min.js"></script>
+		<!-- Easing JS -->
+        <script src="js/easing.js"></script>
+		<!-- Color JS -->
+		<script src="js/colors.js"></script>
+		<!-- Popper JS -->
+		<script src="js/popper.min.js"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!-- Jquery Nav JS -->
+        <script src="js/jquery.nav.js"></script>
+		<!-- Slicknav JS -->
+		<script src="js/slicknav.min.js"></script>
+		<!-- ScrollUp JS -->
+        <script src="js/jquery.scrollUp.min.js"></script>
+		<!-- Niceselect JS -->
+		<script src="js/niceselect.js"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="js/tilt.jquery.min.js"></script>
+		<!-- Owl Carousel JS -->
+        <script src="js/owl-carousel.js"></script>
+		<!-- counterup JS -->
+		<script src="js/jquery.counterup.min.js"></script>
+		<!-- Steller JS -->
+		<script src="js/steller.js"></script>
+		<!-- Wow JS -->
+		<script src="js/wow.min.js"></script>
+		<!-- Magnific Popup JS -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+    </body>
+</html>
