@@ -61,23 +61,23 @@
         </div>
         <!-- End Preloader -->
 		
-				<!-- POPUP ส่วนนี้แสดงเมื่อโหลดหน้า -->
+				<!-- POPUP ส่วนนี้แสดงเมื่อโหลดหน้า 
 		<div class="popup-overlay" id="imagePopup">
 			<div class="popup-content">
 			<button class="close-btn" onclick="closePopup()">×</button>
-			<img src="img/objplan.jpg" alt="Welcome Image">
+			<img src="img/objplan2.jpg" alt="Welcome Image">
 			</div>
 		</div>
-		
+		-->
 		
 		<script>
 			function closePopup() {
 			document.getElementById("imagePopup").style.display = "none";
 			}
 		
-			// ถ้าต้องการให้ popup แสดงหลัง delay 2 วิ
-			// setTimeout(() => {
-			//   document.getElementById("imagePopup").style.display = "flex";
+			 //ถ้าต้องการให้ popup แสดงหลัง delay 2 วิ
+			 //setTimeout(() => {
+			 //  document.getElementById("imagePopup").style.display = "flex";
 			// }, 2000);
 		</script>
 		
@@ -170,7 +170,7 @@
 				</div>
 				<!-- End Single Slider -->
 				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('img/T23.jpg')">
+				<div class="single-slider" style="background-image:url('img/T3.jpg')">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
@@ -315,209 +315,24 @@
 		<!--/ End Why choose -->
 
 		
-
-		<!-- Start ปฏิทินการทำงาน -->
-		<section class="why-choose section" >
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<!--<img src="img/section-img.png" alt="#"> -->
-							<!DOCTYPE html>
-							<html lang="en">
-							<head>
-							  <meta charset="UTF-8">
-							  <title>Monthly Calendar</title>
-							  <style>
-								
-							  </style>
-							</head>
-							<body>
-							
-							<div class="calendar-container">
-							  <h1 id="title">Monthly Calendar</h1>
-							  <div class="calendar-header">
-								<button onclick="changeMonth(-1)">◀</button>
-								<h2 id="monthYear"></h2>
-								<button onclick="changeMonth(1)">▶</button>
-								<select id="lang" onchange="changeLanguage()">
-								  <option value="en">English</option>
-								  <option value="th">ไทย</option>
-								</select>
-							  </div>
-							  <div class="calendar-grid" id="calendar-days"></div>
-							</div>
-							
-							<div class="overlay" id="overlay" onclick="closeModal()"></div>
-							<div class="modal" id="modal">
-							  <h3 id="modal-date">Event Date</h3>
-							  <input type="text" id="eventText" placeholder="Enter event name">
-							  <div class="row">
-								<input type="time" id="startTime">
-								<input type="time" id="endTime">
-							  </div>
-							  <button onclick="saveEvent()">Save</button>
-							  <button onclick="deleteEvent()">Delete</button>
-							  <button onclick="closeModal()">Cancel</button>
-							</div>
-							
-							<script>
-							  const monthNames = {
-								en: ["January", "February", "March", "April", "May", "June",
-									 "July", "August", "September", "October", "November", "December"],
-								th: ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน",
-									 "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"]
-							  };
-							
-							  const dayNames = {
-								en: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-								th: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"]
-							  };
-							
-							  const labels = {
-								en: {
-								  title: "Agenda",
-								  event: "Event Date",
-								  placeholder: "Enter event name",
-								  save: "Save", del: "Delete", cancel: "Cancel"
-								},
-								th: {
-								  title: "ตารางกำหนดการประชุมรายเดือน",
-								  event: "กิจกรรมวันที่",
-								  placeholder: "รายละเอียดกิจกรรม",
-								  save: "บันทึก", del: "ลบ", cancel: "ยกเลิก"
-								}
-							  };
-							
-							  let lang = "en";
-							  let currentDate = new Date();
-							  let events = JSON.parse(localStorage.getItem("calendarEvents") || "{}");
-							  let selectedDate = null;
-							
-							  const calendarDays = document.getElementById("calendar-days");
-							  const monthYear = document.getElementById("monthYear");
-							  const overlay = document.getElementById("overlay");
-							  const modal = document.getElementById("modal");
-							  const modalDate = document.getElementById("modal-date");
-							  const eventText = document.getElementById("eventText");
-							  const startTime = document.getElementById("startTime");
-							  const endTime = document.getElementById("endTime");
-							
-							  function renderCalendar() {
-								const year = currentDate.getFullYear();
-								const month = currentDate.getMonth();
-								const firstDay = new Date(year, month, 1).getDay();
-								const daysInMonth = new Date(year, month + 1, 0).getDate();
-							
-								calendarDays.innerHTML = "";
-							
-								dayNames[lang].forEach(day => {
-								  const el = document.createElement("div");
-								  el.className = "day-name";
-								  el.innerText = day;
-								  calendarDays.appendChild(el);
-								});
-							
-								for (let i = 0; i < firstDay; i++) {
-								  calendarDays.innerHTML += `<div class="day"></div>`;
-								}
-							
-								for (let d = 1; d <= daysInMonth; d++) {
-								const dateKey = `${year}-${String(month + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
-								const cell = document.createElement("div");
-								cell.className = "day";
-								cell.innerHTML = `<strong>${d}</strong>`;
-								cell.onclick = () => openModal(dateKey);
-
-								if (events[dateKey]) {
-									const eventInfo = events[dateKey];
-									const eventTextEl = document.createElement("div");
-									eventTextEl.style.fontSize = "0.9em";
-									eventTextEl.style.marginTop = "6px";
-									eventTextEl.style.color = "#333";
-									eventTextEl.style.wordBreak = "break-word";
-									eventTextEl.innerText = `${eventInfo.start || ""} ${eventInfo.text}`;
-									cell.appendChild(eventTextEl);
-								}
-
-								calendarDays.appendChild(cell);
-								}
-								monthYear.innerText = `${monthNames[lang][month]} ${year}`;
-								document.getElementById("title").innerText = labels[lang].title;
-							  }
-							
-							  function changeMonth(offset) {
-								currentDate.setMonth(currentDate.getMonth() + offset);
-								renderCalendar();
-							  }
-							
-							  function openModal(date) {
-								selectedDate = date;
-								modalDate.innerText = `${labels[lang].event} ${date}`;
-								const event = events[date] || {};
-								eventText.value = event.text || "";
-								startTime.value = event.start || "";
-								endTime.value = event.end || "";
-								eventText.placeholder = labels[lang].placeholder;
-								modal.style.display = "block";
-								overlay.style.display = "block";
-							  }
-							
-							  function closeModal() {
-								modal.style.display = "none";
-								overlay.style.display = "none";
-							  }
-							
-							  function saveEvent() {
-								if (!eventText.value.trim()) return;
-								events[selectedDate] = {
-								  text: eventText.value,
-								  start: startTime.value,
-								  end: endTime.value
-								};
-								localStorage.setItem("calendarEvents", JSON.stringify(events));
-								closeModal();
-								renderCalendar();
-							  }
-							
-							  function deleteEvent() {
-								const deletePassword = "10676"; // แก้รหัสผ่านตรงนี้ได้
-								const pass = prompt(lang === "th" ? "กรุณาใส่รหัสผ่านเพื่อลบกิจกรรม" : "Enter password to delete this event:");
-								if (pass !== deletePassword) {
-									alert(lang === "th" ? "รหัสผ่านไม่ถูกต้อง" : "Incorrect password!");
-									return;
-								}
-								delete events[selectedDate];
-								localStorage.setItem("calendarEvents", JSON.stringify(events));
-								closeModal();
-								renderCalendar();
-
-
-							  }
-							
-							  function changeLanguage() {
-								lang = document.getElementById("lang").value;
-								document.querySelector('button[onclick="saveEvent()"]').innerText = labels[lang].save;
-								document.querySelector('button[onclick="deleteEvent()"]').innerText = labels[lang].del;
-								document.querySelector('button[onclick="closeModal()"]').innerText = labels[lang].cancel;
-								renderCalendar();
-							  }
-							
-							  renderCalendar();
-							</script>
-							
-							</body>
-							</html>
-
-							<p></p>
-						</div>
-					</div>
-				</div>
-			
-			</div>
-		</section>
-
-
+<!-- วางใน HTML ตรงที่ต้องการแสดงปฏิทิน -->
+<section class="calendar-section">
+    			<div class="calendar-header">
+        			<h2>📅 ปฏิทินกิจกรรม</h2>
+    				   <p>กลุ่มงานประกันโรงพยาบาลพุทธชินราช พิษณุโลก</p>
+    			</div>
+    				<div class="calendar-wrapper">
+      	  <iframe 
+						src="https://calendar.google.com/calendar/embed?src=socialbudhosp@gmail.com&ctz=Asia%2FBangkok&hl=th&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&mode=MONTH"
+						style="border:0" 
+						width="100%" 
+						height="600" 
+						frameborder="0" 
+						scrolling="no">
+		</iframe>
+   					 </div>
+</section>
+	
 			
 
 		<!-- Footer Area -->
